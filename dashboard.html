@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Centre for Advanced Studies</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="cursor-glow"></div>
+
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="ph ph-buildings" style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 10px;"></i>
+                <h3 style="font-size: 1.2rem; margin-bottom: 5px;">CAS Portal</h3>
+                <span style="font-size: 0.8rem; opacity: 0.8;">Student Dashboard</span>
+            </div>
+            
+            <div class="sidebar-menu">
+                <a href="#" class="active"><i class="ph ph-squares-four"></i> Overview</a>
+                <a href="#"><i class="ph ph-user"></i> My Profile</a>
+                <a href="#"><i class="ph ph-book-open"></i> My Courses</a>
+                <a href="#"><i class="ph ph-file-text"></i> Applications</a>
+                <a href="#"><i class="ph ph-bookmark-simple"></i> Saved Research</a>
+                <a href="#"><i class="ph ph-calendar-check"></i> Timetable</a>
+                <a href="#"><i class="ph ph-gear"></i> Settings</a>
+                <a href="index.html" style="margin-top: 50px; color: #ff7675;"><i class="ph ph-sign-out"></i> Logout</a>
+                <button class="theme-toggle" aria-label="Toggle Dark Mode" style="margin-top: 20px; justify-content: flex-start; padding-left: 25px;"><i class="ph ph-moon"></i> Dark Mode</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="dashboard-header">
+                <button class="mobile-menu-btn" style="display: none; color: var(--primary);"><i class="ph ph-list"></i></button>
+                <div>
+                    <h2 style="color: var(--primary);">Welcome back, Alex!</h2>
+                    <p style="color: var(--text-light); font-size: 0.95rem;">M.Tech Computer Science (Sem 2)</p>
+                </div>
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <div style="position: relative; cursor: pointer;">
+                        <i class="ph ph-bell" style="font-size: 1.5rem; color: var(--text-light);"></i>
+                        <span style="position: absolute; top: -2px; right: -2px; width: 10px; height: 10px; background-color: var(--accent-dark-red); border-radius: 50%;"></span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;" alt="User">
+                        <span style="font-weight: 500;">Alex Doe <i class="ph ph-caret-down"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-3" style="margin-bottom: 30px;">
+                <div class="glass-card" style="display: flex; align-items: center; gap: 20px;">
+                    <div style="width: 60px; height: 60px; background-color: rgba(10, 61, 98, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 2rem;">
+                        <i class="ph ph-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 5px;">Current SGPA</p>
+                        <h3 style="font-size: 1.8rem;">8.75</h3>
+                    </div>
+                </div>
+                
+                <div class="glass-card" style="display: flex; align-items: center; gap: 20px;">
+                    <div style="width: 60px; height: 60px; background-color: rgba(0, 168, 255, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--accent-light-blue); font-size: 2rem;">
+                        <i class="ph ph-calendar-check"></i>
+                    </div>
+                    <div>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 5px;">Attendance</p>
+                        <h3 style="font-size: 1.8rem;">92%</h3>
+                    </div>
+                </div>
+                
+                <div class="glass-card" style="display: flex; align-items: center; gap: 20px;">
+                    <div style="width: 60px; height: 60px; background-color: rgba(142, 68, 173, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--accent-violet); font-size: 2rem;">
+                        <i class="ph ph-books"></i>
+                    </div>
+                    <div>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 5px;">Assignments Due</p>
+                        <h3 style="font-size: 1.8rem;">2</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="glass-card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                        <h3 style="color: var(--primary);">My Courses (This Semester)</h3>
+                        <a href="#" style="font-size: 0.9rem; color: var(--accent-light-blue);">View All</a>
+                    </div>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 15px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 15px; border-bottom: 1px solid rgba(0,0,0,0.05);">
+                            <div>
+                                <h4 style="margin-bottom: 5px; font-size: 1.05rem;">Advanced Machine Learning</h4>
+                                <p style="font-size: 0.85rem; color: var(--text-light);">Dr. S. Gupta | CAS-CS-201</p>
+                            </div>
+                            <span style="background-color: rgba(46, 204, 113, 0.1); color: #27ae60; padding: 5px 10px; border-radius: 6px; font-size: 0.85rem; font-weight: 500;">Ongoing</span>
+                        </div>
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 15px; border-bottom: 1px solid rgba(0,0,0,0.05);">
+                            <div>
+                                <h4 style="margin-bottom: 5px; font-size: 1.05rem;">Big Data Analytics</h4>
+                                <p style="font-size: 0.85rem; color: var(--text-light);">Dr. A. K. Sharma | CAS-CS-202</p>
+                            </div>
+                            <span style="background-color: rgba(46, 204, 113, 0.1); color: #27ae60; padding: 5px 10px; border-radius: 6px; font-size: 0.85rem; font-weight: 500;">Ongoing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                        <h3 style="color: var(--primary);">Saved Research Papers</h3>
+                    </div>
+                    
+                    <ul style="display: flex; flex-direction: column; gap: 15px;">
+                        <li style="display: flex; gap: 15px; align-items: flex-start;">
+                            <i class="ph ph-file-pdf" style="font-size: 2rem; color: #e74c3c;"></i>
+                            <div>
+                                <a href="#" style="font-weight: 500; display: block; margin-bottom: 5px;">Federated Learning for Secure Healthcare</a>
+                                <p style="font-size: 0.85rem; color: var(--text-light);">Added on Mar 12, 2026</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 15px; align-items: flex-start;">
+                            <i class="ph ph-file-pdf" style="font-size: 2rem; color: #e74c3c;"></i>
+                            <div>
+                                <a href="#" style="font-weight: 500; display: block; margin-bottom: 5px;">Quantum Cryptography overview</a>
+                                <p style="font-size: 0.85rem; color: var(--text-light);">Added on Feb 28, 2026</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script>
+        // Simple logic for dashboard mobile menu
+        document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
+            document.querySelector('.sidebar').classList.toggle('active');
+        });
+        
+        // Ensure sidebar functions correctly on resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth <= 768) {
+                document.querySelector('.mobile-menu-btn').style.display = 'block';
+            } else {
+                document.querySelector('.mobile-menu-btn').style.display = 'none';
+                document.querySelector('.sidebar').classList.remove('active');
+            }
+        });
+        
+        // Initial check
+        if (window.innerWidth <= 768) {
+            document.querySelector('.mobile-menu-btn').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
